@@ -7,7 +7,7 @@
 <body>
 {{content}}
 
-papers
+paper
 <ul>
     {% for paper in site.data.papers %}
       <li>
@@ -16,11 +16,20 @@ papers
     {% endfor %}
 </ul>
 
-presentations
+presentation
 <ul>
   {% for presentation in site.data.presentations %}
     <li>
       {{ presentation.name }}
+    </li>
+  {% endfor %}
+</ul>
+
+workshop
+<ul>
+  {% for workshop in site.data.workshops %}
+    <li>
+      {{ workshop.name }}
     </li>
   {% endfor %}
 </ul>
