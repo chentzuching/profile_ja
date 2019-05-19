@@ -1,0 +1,17 @@
+<!doctype html>
+<html>
+<head>
+<title>{{page.title}}</title>
+<meta name="robots" content="noindex,nofollow">
+</head>
+<body>
+{{content}}
+<ul>
+    {% for paper in site.data.papers %}
+      <li>
+        {{ paper.name }}
+      </li>
+    {% endfor %}
+</ul>
+</body>
+</html>
