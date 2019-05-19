@@ -13,5 +13,15 @@
       </li>
     {% endfor %}
 </ul>
+
+presentation
+<ul>
+  {% for presentation in site.data.presentations %}
+    <li>
+      {{ presentation.name }}
+    </li>
+  {% endfor %}
+</ul>
+
 </body>
 </html>
