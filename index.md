@@ -3,6 +3,4 @@ layout: default
 title: "top page"
 ---
 
-# hello
-
-world
+# 陳　姿菁  業績一覧
