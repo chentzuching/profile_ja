@@ -29,23 +29,26 @@ h4 {
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav mr-auto">
             <li class="nav-item">
-              <a class="nav-link" href="#paper"><i class="fa fa-angle-right"></i> 論文</a>
+              <a class="nav-link" href="#paper"><i class="fa fa-angle-right"></i> 論文（査読あり）</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#award"><i class="fa fa-angle-right"></i> 論文獎</a>
+              <a class="nav-link" href="#award"><i class="fa fa-angle-right"></i> 論文賞</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#book"><i class="fa fa-angle-right"></i> 專書等</a>
+                <a class="nav-link" href="#book"><i class="fa fa-angle-right"></i> 著書等</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#presentation"><i class="fa fa-angle-right"></i> 學會、研討會等發表</a>
+                <a class="nav-link" href="#presentation"><i class="fa fa-angle-right"></i> 学会、研究発表会</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#lecture"><i class="fa fa-angle-right"></i> 招待演講</a>
+                <a class="nav-link" href="#lecture"><i class="fa fa-angle-right"></i> 招待講演</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#workshop"><i class="fa fa-angle-right"></i> 工作坊</a>
+                <a class="nav-link" href="#workshop"><i class="fa fa-angle-right"></i> ワークショップ</a>
             </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#chair"><i class="fa fa-angle-right"></i> 座長・司会者・コメンテーター等</a>
+          </li>
             <li class="nav-item">
                 <a class="nav-link" href="#textbook"><i class="fa fa-angle-right"></i> 教科書</a>
             </li>
@@ -53,13 +56,13 @@ h4 {
                 <a class="nav-link" href="#report"><i class="fa fa-angle-right"></i> 報告書</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#int-project"><i class="fa fa-angle-right"></i> 校內研究計劃</a>
+                <a class="nav-link" href="#int-project"><i class="fa fa-angle-right"></i> 学内研究費</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#out-project"><i class="fa fa-angle-right"></i> 校外研究計劃</a>
+                <a class="nav-link" href="#out-project"><i class="fa fa-angle-right"></i> 学外研究費</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#gov-work"><i class="fa fa-angle-right"></i> 政府機関等工作</a>
+                <a class="nav-link" href="#gov-work"><i class="fa fa-angle-right"></i> 政府機関等</a>
             </li>
             <!--li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -90,7 +93,7 @@ h4 {
 <br>
 <br>
 
-<h4>論文</h4>
+<h4>論文（査読あり）</h4>
 <br>
 <div class="table-responsive">
 <table class="table table-bordered table-striped">
@@ -113,7 +116,7 @@ h4 {
 <br>
 <br>
 
-<h4>論文獎</h4>
+<h4>論文賞</h4>
 <br>
 <div class="table-responsive">
 <table class="table table-bordered table-striped">
@@ -136,7 +139,7 @@ h4 {
 <br>
 <br>
 
-<h4>專書等</h4>
+<h4>著書等</h4>
 <br>
 <div class="table-responsive">
 <table class="table table-bordered table-striped">
@@ -159,7 +162,7 @@ h4 {
 <br>
 <br>
 
-<h4>學會、研討會等發表</h4>
+<h4>学会、研究会発表</h4>
 <br>
 <div class="table-responsive">
 <table class="table table-bordered table-striped">
@@ -182,7 +185,7 @@ h4 {
 <br>
 <br>
 
-<h4>招待演講</h4>
+<h4>招待講演</h4>
 <br>
 <div class="table-responsive">
 <table class="table table-bordered table-striped">
@@ -205,7 +208,7 @@ h4 {
 <br>
 <br>
 
-<h4>工作坊</h4>
+<h4>ワークショップ</h4>
 <br>
 <div class="table-responsive">
 <table class="table table-bordered table-striped">
@@ -215,6 +218,29 @@ h4 {
 <td class="text-nowrap">{{ workshop.name }}</td>
 <td class="text-nowrap">{{ workshop.date }}</td>
 <td>{{ workshop.content }}</td>
+</tr>
+{% endfor %}
+</tbody>
+</table>
+</div>
+
+<div id="chair"></div>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<h4>座長・司会者・コメンテーター等</h4>
+<br>
+<div class="table-responsive">
+<table class="table table-bordered table-striped">
+<tbody>
+{% for chair in site.data.chairs %}
+<tr>
+<td class="text-nowrap">{{ chair.name }}</td>
+<td class="text-nowrap">{{ chair.date }}</td>
+<td>{{ chair.content }}</td>
 </tr>
 {% endfor %}
 </tbody>
@@ -273,7 +299,7 @@ h4 {
 <br>
 <br>
 
-<h4>校內研究計劃</h4>
+<h4>学内研究費</h4>
 <br>
 <div class="table-responsive">
 <table class="table table-bordered table-striped">
@@ -295,7 +321,7 @@ h4 {
 <br>
 <br>
 
-<h4>校外研究計劃</h4>
+<h4>学外研究費</h4>
 <br>
 <div class="table-responsive">
 <table class="table table-bordered table-striped">
@@ -317,7 +343,7 @@ h4 {
 <br>
 <br>
 
-<h4>政府機関等工作</h4>
+<h4>政府機関等</h4>
 <br>
 <div class="table-responsive">
 <table class="table table-bordered table-striped">
