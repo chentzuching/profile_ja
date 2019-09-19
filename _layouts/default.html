@@ -1,10 +1,372 @@
 <!doctype html>
 <html>
 <head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <title>{{page.title}}</title>
-<meta name="robots" content="noindex,nofollow">
+<meta name="robots" content="noindex, nofollow">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+<style type="text/css">
+h4 {
+  padding: .25em 0 .25em .75em;
+  border-left: 6px solid #dee2e6;
+}
+</style>
+
 </head>
 <body>
-{{content}}
+
+<div class="container">
+
+    <nav class="navbar navbar-collapse-lg navbar-dark bg-dark sticky-top">
+        <a class="navbar-brand" href="#"><i class="fa fa-university"></i> 業績一覧 - 陳姿菁</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#paper"><i class="fa fa-angle-right"></i> 論文</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#award"><i class="fa fa-angle-right"></i> 論文獎</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#book"><i class="fa fa-angle-right"></i> 專書等</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#presentation"><i class="fa fa-angle-right"></i> 學會、研討會等發表</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#lecture"><i class="fa fa-angle-right"></i> 招待演講</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#workshop"><i class="fa fa-angle-right"></i> 工作坊</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#textbook"><i class="fa fa-angle-right"></i> 教科書</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#report"><i class="fa fa-angle-right"></i> 報告書</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#int-project"><i class="fa fa-angle-right"></i> 校內研究計劃</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#out-project"><i class="fa fa-angle-right"></i> 校外研究計劃</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#gov-work"><i class="fa fa-angle-right"></i> 政府機関等工作</a>
+            </li>
+            <!--li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                其他
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">Action</a>
+                <a class="dropdown-item" href="#">Another action</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </div>
+            </li-->
+            <!--li class="nav-item">
+              <a class="nav-link disabled" href="#">Disabled</a>
+            </li-->
+          </ul>
+          <!--form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+          </form-->
+        </div>
+      </nav>
+
+<div id="paper"></div>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<h4>論文</h4>
+<br>
+<div class="table-responsive">
+<table class="table table-bordered table-striped">
+<tbody>
+{% for paper in site.data.papers %}
+<tr>
+<td class="text-nowrap">{{ paper.name }}</td>
+<td class="text-nowrap">{{ paper.date }}</td>
+<td>{{ paper.content }}</td>
+</tr>
+{% endfor %}
+</tbody>
+</table>
+</div>
+
+<div id="award"></div>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<h4>論文獎</h4>
+<br>
+<div class="table-responsive">
+<table class="table table-bordered table-striped">
+<tbody>
+{% for award in site.data.awards %}
+<tr>
+<td class="text-nowrap">{{ award.name }}</td>
+<td class="text-nowrap">{{ award.date }}</td>
+<td>{{ award.content }}</td>
+</tr>
+{% endfor %}
+</tbody>
+</table>
+</div>
+
+<div id="book"></div>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<h4>專書等</h4>
+<br>
+<div class="table-responsive">
+<table class="table table-bordered table-striped">
+<tbody>
+{% for book in site.data.books %}
+<tr>
+<td class="text-nowrap">{{ book.name }}</td>
+<td class="text-nowrap">{{ book.date }}</td>
+<td>{{ book.content }}</td>
+</tr>
+{% endfor %}
+</tbody>
+</table>
+</div>
+
+<div id="presentation"></div>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<h4>學會、研討會等發表</h4>
+<br>
+<div class="table-responsive">
+<table class="table table-bordered table-striped">
+<tbody>
+{% for presentation in site.data.presentations %}
+<tr>
+<td class="text-nowrap">{{ presentation.name }}</td>
+<td class="text-nowrap">{{ presentation.date }}</td>
+<td>{{ presentation.content }}</td>
+</tr>
+{% endfor %}
+</tbody>
+</table>
+</div>
+
+<div id="lecture"></div>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<h4>招待演講</h4>
+<br>
+<div class="table-responsive">
+<table class="table table-bordered table-striped">
+<tbody>
+{% for lecture in site.data.lectures %}
+<tr>
+<td class="text-nowrap">{{ lecture.name }}</td>
+<td class="text-nowrap">{{ lecture.date }}</td>
+<td>{{ lecture.content }}</td>
+</tr>
+{% endfor %}
+</tbody>
+</table>
+</div>
+
+<div id="workshop"></div>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<h4>工作坊</h4>
+<br>
+<div class="table-responsive">
+<table class="table table-bordered table-striped">
+<tbody>
+{% for workshop in site.data.workshops %}
+<tr>
+<td class="text-nowrap">{{ workshop.name }}</td>
+<td class="text-nowrap">{{ workshop.date }}</td>
+<td>{{ workshop.content }}</td>
+</tr>
+{% endfor %}
+</tbody>
+</table>
+</div>
+
+<div id="textbook"></div>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<h4>教科書</h4>
+<br>
+<div class="table-responsive">
+<table class="table table-bordered table-striped">
+<tbody>
+{% for textbook in site.data.textbooks %}
+<tr>
+<td class="text-nowrap">{{ textbook.name }}</td>
+<td class="text-nowrap">{{ textbook.date }}</td>
+<td>{{ textbook.content }}</td>
+</tr>
+{% endfor %}
+</tbody>
+</table>
+</div>
+
+<div id="report"></div>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<h4>報告書</h4>
+<br>
+<div class="table-responsive">
+<table class="table table-bordered table-striped">
+<tbody>
+{% for report in site.data.reports %}
+<tr>
+<td class="text-nowrap">{{ report.date }}</td>
+<td>{{ report.content }}</td>
+</tr>
+{% endfor %}
+</tbody>
+</table>
+</div>
+
+<div id="int-project"></div>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<h4>校內研究計劃</h4>
+<br>
+<div class="table-responsive">
+<table class="table table-bordered table-striped">
+<tbody>
+{% for int-project in site.data.int-projects %}
+<tr>
+<td class="text-nowrap">{{ int-project.date }}</td>
+<td>{{ int-project.content }}</td>
+</tr>
+{% endfor %}
+</tbody>
+</table>
+</div>
+
+<div id="out-project"></div>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<h4>校外研究計劃</h4>
+<br>
+<div class="table-responsive">
+<table class="table table-bordered table-striped">
+<tbody>
+{% for out-project in site.data.out-projects %}
+<tr>
+<td class="text-nowrap">{{ out-project.date }}</td>
+<td>{{ out-project.content }}</td>
+</tr>
+{% endfor %}
+</tbody>
+</table>
+</div>
+
+<div id="gov-work"></div>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<h4>政府機関等工作</h4>
+<br>
+<div class="table-responsive">
+<table class="table table-bordered table-striped">
+<tbody>
+{% for gov-work in site.data.gov-works %}
+<tr>
+<td class="text-nowrap">{{ gov-work.date }}</td>
+<td>{{ gov-work.content }}</td>
+</tr>
+{% endfor %}
+</tbody>
+</table>
+</div>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script>
+  $('.navbar-nav>li>a , .dropdown-menu>a').on('click', function(){
+    if(this.id != 'navbarDropdown'){
+      $('.navbar-collapse').collapse('hide');
+    }
+  });
+</script>
 </body>
+</div>
 </html>
