@@ -56,11 +56,14 @@ h4 {
                 <a class="nav-link" href="#report"><i class="fa fa-angle-right"></i> 報告書</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#int-project"><i class="fa fa-angle-right"></i> 学内研究費</a>
+                <a class="nav-link" href="#in-project"><i class="fa fa-angle-right"></i> 学内研究費</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="#out-project"><i class="fa fa-angle-right"></i> 学外研究費</a>
             </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#inter-project"><i class="fa fa-angle-right"></i> 出席国際学会経費</a>
+          </li>
             <li class="nav-item">
                 <a class="nav-link" href="#gov-work"><i class="fa fa-angle-right"></i> 政府機関等</a>
             </li>
@@ -292,7 +295,7 @@ h4 {
 </table>
 </div>
 
-<div id="int-project"></div>
+<div id="inner-project"></div>
 <br>
 <br>
 <br>
@@ -304,17 +307,17 @@ h4 {
 <div class="table-responsive">
 <table class="table table-bordered table-striped">
 <tbody>
-{% for int-project in site.data.int-projects %}
+{% for inner-project in site.data.inner-projects %}
 <tr>
-<td class="text-nowrap">{{ int-project.date }}</td>
-<td>{{ int-project.content }}</td>
+<td class="text-nowrap">{{ inner-project.date }}</td>
+<td>{{ inner-project.content }}</td>
 </tr>
 {% endfor %}
 </tbody>
 </table>
 </div>
 
-<div id="out-project"></div>
+<div id="outer-project"></div>
 <br>
 <br>
 <br>
@@ -326,10 +329,32 @@ h4 {
 <div class="table-responsive">
 <table class="table table-bordered table-striped">
 <tbody>
-{% for out-project in site.data.out-projects %}
+{% for outer-project in site.data.outer-projects %}
 <tr>
-<td class="text-nowrap">{{ out-project.date }}</td>
-<td>{{ out-project.content }}</td>
+<td class="text-nowrap">{{ outer-project.date }}</td>
+<td>{{ outer-project.content }}</td>
+</tr>
+{% endfor %}
+</tbody>
+</table>
+</div>
+
+<div id="international-project"></div>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<h4>学内研究費</h4>
+<br>
+<div class="table-responsive">
+<table class="table table-bordered table-striped">
+<tbody>
+{% for international-project in site.data.international-projects %}
+<tr>
+<td class="text-nowrap">{{ international-project.date }}</td>
+<td>{{ international-project.content }}</td>
 </tr>
 {% endfor %}
 </tbody>
