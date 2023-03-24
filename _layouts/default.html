@@ -1,5 +1,5 @@
 <!doctype html>
-<html>
+<html lang="ja">
 <head>
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,92 +11,103 @@
 <style type="text/css">
 h4 {
   padding: .25em 0 .25em .75em;
-  border-left: 6px solid #dee2e6;
+  border-left: 3px solid rgba(0, 0, 0, 1);
 }
 </style>
 
 </head>
 <body>
 
-<div class="container">
+<div class="container-fluid mx-auto px-0">
 
-    <nav class="navbar navbar-collapse-lg navbar-dark bg-dark sticky-top">
-        <a class="navbar-brand" href="#"><i class="fa fa-university"></i> 業績一覧 - 陳姿菁</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
+  <nav class="navbar navbar-collapse-lg navbar-dark bg-dark sticky-top px-4">
+    <a class="navbar-brand" href="#">業績一覧 - 陳姿菁</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
       
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav mr-auto">
-            <li class="nav-item">
-              <a class="nav-link" href="#paper"><i class="fa fa-angle-right"></i> 論文（査読あり）</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#award"><i class="fa fa-angle-right"></i> 論文賞等</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#book"><i class="fa fa-angle-right"></i> 著書等</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#presentation"><i class="fa fa-angle-right"></i> 学会、研究発表会</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#lecture"><i class="fa fa-angle-right"></i> 招待講演</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#workshop"><i class="fa fa-angle-right"></i> ワークショップ</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#chair"><i class="fa fa-angle-right"></i> 座長・司会者・コメンテーター等</a>
-          </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#textbook"><i class="fa fa-angle-right"></i> 教科書</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#report"><i class="fa fa-angle-right"></i> 報告書</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#inner-project"><i class="fa fa-angle-right"></i> 学内研究費</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#outer-project"><i class="fa fa-angle-right"></i> 学外研究費</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#international-project"><i class="fa fa-angle-right"></i> 国際会議参加経費</a>
-          </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#gov-work"><i class="fa fa-angle-right"></i> 政府機関等</a>
-            </li>
-            <!--li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                其他
-              </a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="#">Action</a>
-                <a class="dropdown-item" href="#">Another action</a>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="#">Something else here</a>
-              </div>
-            </li-->
-            <!--li class="nav-item">
-              <a class="nav-link disabled" href="#">Disabled</a>
-            </li-->
-          </ul>
-          <!--form class="form-inline my-2 my-lg-0">
-            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-          </form-->
-        </div>
-      </nav>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="#paper"><i class="fa fa-angle-right"></i> 論文（査読あり）</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#award"><i class="fa fa-angle-right"></i> 論文賞等</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#book"><i class="fa fa-angle-right"></i> 著書等</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#presentation"><i class="fa fa-angle-right"></i> 学会、研究発表会</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#lecture"><i class="fa fa-angle-right"></i> 招待講演</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#workshop"><i class="fa fa-angle-right"></i> ワークショップ</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#chair"><i class="fa fa-angle-right"></i> 座長・司会者・コメンテーター等</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#textbook"><i class="fa fa-angle-right"></i> 教科書</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#report"><i class="fa fa-angle-right"></i> 報告書</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#inner-project"><i class="fa fa-angle-right"></i> 学内研究費</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#outer-project"><i class="fa fa-angle-right"></i> 学外研究費</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#international-project"><i class="fa fa-angle-right"></i> 国際会議参加経費</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#gov-work"><i class="fa fa-angle-right"></i> 政府機関等</a>
+        </li>  
+      </ul>
+    </div>
+  </nav>
+
+<div class="px-4">
+
+<br>
+<br>
+<br>
+<h4 class="font-weight-bold">自己紹介</h4>
+<br>
+日本国立お茶の水女子大学人文科学博士
+<br>
+<br>
+開南大学応用日本語学科・応用中国語学科副教授
+<br>
+<br>
+米国外国語教育委員会（American Council on the Teaching of Foreign Languages、ACTFL）の<b>日本語OPIテスター</b>
+<br>
+<br>
+<b>「12年間国民基本教育学習指導要領-第2外国語」委員</b>
+<br>
+<br>
+「108年度高等学校インターンシップカリキュラム技能評価」（外国語群）の問題開発研究委員
+<br>
+<br>
+
+<b>台湾政府認定の中国語教師資格</b>を保持。
+<br>
+<br>
+専門分野は<b>談話分析</b>、<b>日本語教育</b>、<b>中国語教育</b>。近年の研究の関心は、 キー・コンピテンシー特に態度の育成  、メタ認知と学習効果の関係、学習者の実際の言語運用能力の育成、学習者の自律的な学習の促進、外国語学習を効率的に行うためのアプリ開発など。
+
+
 
 <div id="paper"></div>
 <br>
 <br>
 <br>
-<br>
-<br>
 
-<h4>論文（査読あり）</h4>
+
+<h4 class="font-weight-bold">論文（査読あり）</h4>
 <br>
 <div class="table-responsive">
 <table class="table table-bordered table-striped">
@@ -116,10 +127,8 @@ h4 {
 <br>
 <br>
 <br>
-<br>
-<br>
 
-<h4>論文賞等</h4>
+<h4 class="font-weight-bold">論文賞等</h4>
 <br>
 <div class="table-responsive">
 <table class="table table-bordered table-striped">
@@ -139,10 +148,8 @@ h4 {
 <br>
 <br>
 <br>
-<br>
-<br>
 
-<h4>著書等</h4>
+<h4 class="font-weight-bold">著書等</h4>
 <br>
 <div class="table-responsive">
 <table class="table table-bordered table-striped">
@@ -162,10 +169,8 @@ h4 {
 <br>
 <br>
 <br>
-<br>
-<br>
 
-<h4>学会、研究会発表</h4>
+<h4 class="font-weight-bold">学会、研究会発表</h4>
 <br>
 <div class="table-responsive">
 <table class="table table-bordered table-striped">
@@ -185,10 +190,8 @@ h4 {
 <br>
 <br>
 <br>
-<br>
-<br>
 
-<h4>招待講演</h4>
+<h4 class="font-weight-bold">招待講演</h4>
 <br>
 <div class="table-responsive">
 <table class="table table-bordered table-striped">
@@ -208,10 +211,8 @@ h4 {
 <br>
 <br>
 <br>
-<br>
-<br>
 
-<h4>ワークショップ</h4>
+<h4 class="font-weight-bold">ワークショップ</h4>
 <br>
 <div class="table-responsive">
 <table class="table table-bordered table-striped">
@@ -231,10 +232,8 @@ h4 {
 <br>
 <br>
 <br>
-<br>
-<br>
 
-<h4>座長・司会者・コメンテーター等</h4>
+<h4 class="font-weight-bold">座長・司会者・コメンテーター等</h4>
 <br>
 <div class="table-responsive">
 <table class="table table-bordered table-striped">
@@ -254,10 +253,8 @@ h4 {
 <br>
 <br>
 <br>
-<br>
-<br>
 
-<h4>教科書</h4>
+<h4 class="font-weight-bold">教科書</h4>
 <br>
 <div class="table-responsive">
 <table class="table table-bordered table-striped">
@@ -277,10 +274,8 @@ h4 {
 <br>
 <br>
 <br>
-<br>
-<br>
 
-<h4>報告書</h4>
+<h4 class="font-weight-bold">報告書</h4>
 <br>
 <div class="table-responsive">
 <table class="table table-bordered table-striped">
@@ -299,10 +294,8 @@ h4 {
 <br>
 <br>
 <br>
-<br>
-<br>
 
-<h4>学内研究費</h4>
+<h4 class="font-weight-bold">学内研究費</h4>
 <br>
 <div class="table-responsive">
 <table class="table table-bordered table-striped">
@@ -321,10 +314,8 @@ h4 {
 <br>
 <br>
 <br>
-<br>
-<br>
 
-<h4>学外研究費</h4>
+<h4 class="font-weight-bold">学外研究費</h4>
 <br>
 <div class="table-responsive">
 <table class="table table-bordered table-striped">
@@ -343,10 +334,8 @@ h4 {
 <br>
 <br>
 <br>
-<br>
-<br>
 
-<h4>国際会議参加経費</h4>
+<h4 class="font-weight-bold">国際会議参加経費</h4>
 <br>
 <div class="table-responsive">
 <table class="table table-bordered table-striped">
@@ -365,10 +354,8 @@ h4 {
 <br>
 <br>
 <br>
-<br>
-<br>
 
-<h4>政府機関等</h4>
+<h4 class="font-weight-bold">政府機関等</h4>
 <br>
 <div class="table-responsive">
 <table class="table table-bordered table-striped">
@@ -408,6 +395,9 @@ h4 {
 <br>
 <br>
 
+</div>
+</div>
+
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
@@ -419,5 +409,4 @@ h4 {
   });
 </script>
 </body>
-</div>
 </html>
