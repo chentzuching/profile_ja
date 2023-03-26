@@ -13,6 +13,30 @@ h4 {
   padding: .25em 0 .25em .75em;
   border-left: 3px solid rgba(0, 0, 0, 1);
 }
+html {
+  /*scroll-behavior: smooth;*/
+}
+.pagetop {
+  height: 50px;
+  width: 50px;
+  position: fixed;
+  right: 30px;
+  bottom: 30px;
+  background-color: #343a40;
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+}
+.pagetop_arrow {
+  height: 10px;
+  width: 10px;
+  border-top: 2px solid #fff;
+  border-right: 2px solid #fff;
+  transform: translate(0%, 6%) rotate(-45deg);
+}
 </style>
 
 </head>
@@ -409,7 +433,10 @@ h4 {
 </div>
 </div>
 
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<a class="pagetop" href="#"><div class="pagetop_arrow"></div></a>
+
+<!--script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script-->
+<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha384-tsQFqpEReu7ZLhBV2VZlAu7zcOV+rXbYlF2cqB8txI/8aZajjp4Bqd+V6D5IgvKT" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 <script>
@@ -418,6 +445,18 @@ h4 {
       $('.navbar-collapse').collapse('hide');
     }
   });
+  $(document).ready(function() {
+    $('.pagetop').fadeOut(0);
+  });
+  //jQuery(function($){
+    $(window).on('scroll', function(){
+      if ($(window).scrollTop() > 300) {
+        $('.pagetop').fadeIn(400);
+      } else {
+        $('.pagetop').fadeOut(400);
+      }
+    });
+  //});
 </script>
 </body>
 </html>
