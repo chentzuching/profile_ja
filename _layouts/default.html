@@ -1,467 +1,549 @@
 <!doctype html>
 <html lang="ja">
+
 <head>
-<meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>{{page.title}}</title>
-<meta name="robots" content="noindex, nofollow">
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-<link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
-<style type="text/css">
-html {
-  scroll-behavior: smooth;
-}
-h4 {
-  padding: .25em 0 .25em .75em;
-  border-left: 3px solid rgba(0, 0, 0, 1);
-}
-.pagetop {
-  height: 50px;
-  width: 50px;
-  position: fixed;
-  right: 0px;
-  bottom: 0px;
-  background-color: rgba(52, 58, 64, 0.9);
-  color: white;
-  border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  z-index: 2;
-}
-.pagetop_arrow {
-  height: 10px;
-  width: 10px;
-  border-top: 2px solid #fff;
-  border-right: 2px solid #fff;
-  transform: translate(-2%, 6%) rotate(-45deg);
-}
-</style>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{page.title}}</title>
+  <meta name="robots" content="noindex, nofollow">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+  <style type="text/css">
+    html {
+      scroll-behavior: smooth;
+    }
+
+    h4 {
+      padding: .25em 0 .25em .75em;
+      border-left: 3px solid rgba(0, 0, 0, 1);
+    }
+
+    .pagetop {
+      height: 50px;
+      width: 50px;
+      position: fixed;
+      right: 0px;
+      bottom: 0px;
+      background-color: rgba(52, 58, 64, 0.9);
+      color: white;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: 2;
+    }
+
+    .pagetop_arrow {
+      height: 10px;
+      width: 10px;
+      border-top: 2px solid #fff;
+      border-right: 2px solid #fff;
+      transform: translate(-2%, 6%) rotate(-45deg);
+    }
+  </style>
 
 </head>
+
 <body>
 
-<div class="container-fluid mx-auto px-0">
+  <div class="container-fluid">
 
-  <nav class="navbar navbar-collapse-lg navbar-dark bg-dark fixed-top px-4">
-    
-    <!--div class="container-fluid" style="max-width: 1024px; margin-right: auto; margin-left: auto;"-->
-    
-      <a class="navbar-brand" href="#">陳姿菁</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-      
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav mr-auto">
-        <li class="nav-item">
-          <a class="nav-link" href="#top"><i class="fa fa-angle-right"></i> 自己紹介</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#paper"><i class="fa fa-angle-right"></i> 論文（査読あり）</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#award"><i class="fa fa-angle-right"></i> 論文賞等</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#book"><i class="fa fa-angle-right"></i> 著書等</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#presentation"><i class="fa fa-angle-right"></i> 学会、研究発表会</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#lecture"><i class="fa fa-angle-right"></i> 招待講演</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#workshop"><i class="fa fa-angle-right"></i> ワークショップ</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#chair"><i class="fa fa-angle-right"></i> 座長・司会者・コメンテーター等</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#textbook"><i class="fa fa-angle-right"></i> 教科書</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#report"><i class="fa fa-angle-right"></i> 報告書</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#inner-project"><i class="fa fa-angle-right"></i> 学内研究費</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#outer-project"><i class="fa fa-angle-right"></i> 学外研究費</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#international-project"><i class="fa fa-angle-right"></i> 国際会議参加経費</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#gov-work"><i class="fa fa-angle-right"></i> 政府機関等</a>
-        </li>  
-      </ul>
+    <div class="row">
+    <div class="col">
+    <div class="d-block d-sm-block d-md-block d-lg-none">
+      <nav class="navbar navbar-collapse-lg navbar-dark bg-dark fixed-top px-4">
+
+        <a class="navbar-brand" href="#">陳姿菁</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#top"><i class="fa fa-angle-right"></i> 自己紹介</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#paper"><i class="fa fa-angle-right"></i> 論文（査読あり）</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#award"><i class="fa fa-angle-right"></i> 論文賞等</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#book"><i class="fa fa-angle-right"></i> 著書等</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#presentation"><i class="fa fa-angle-right"></i> 学会、研究発表会</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#lecture"><i class="fa fa-angle-right"></i> 招待講演</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#workshop"><i class="fa fa-angle-right"></i> ワークショップ</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#chair"><i class="fa fa-angle-right"></i> 座長・司会者・コメンテーター等</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#textbook"><i class="fa fa-angle-right"></i> 教科書</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#report"><i class="fa fa-angle-right"></i> 報告書</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#inner-project"><i class="fa fa-angle-right"></i> 学内研究費</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#outer-project"><i class="fa fa-angle-right"></i> 学外研究費</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#international-project"><i class="fa fa-angle-right"></i> 国際会議参加経費</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#gov-work"><i class="fa fa-angle-right"></i> 政府機関等</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
     </div>
-    <!--/div-->
-  </nav>
-
-<div class="px-4" style="padding-top: 56px; max-width: 640px; margin-right: auto; margin-left: auto;">
-
-<div id="top"></div>
-<br>
-<br>
-<br>
-<h4 class="font-weight-bold">自己紹介</h4>
-<br>
-日本国立お茶の水女子大学人文科学博士
-<br>
-<br>
-開南大学応用日本語学科・応用中国語学科副教授
-<br>
-<br>
-米国外国語教育委員会（American Council on the Teaching of Foreign Languages、ACTFL）の<b>日本語OPIテスター</b>
-<br>
-<br>
-<b>「12年間国民基本教育学習指導要領-第2外国語」委員</b>
-<br>
-<br>
-「108年度高等学校インターンシップカリキュラム技能評価」（外国語群）の問題開発研究委員
-<br>
-<br>
-
-<b>台湾政府認定の中国語教師資格</b>を保持。
-<br>
-<br>
-専門分野は<b>談話分析</b>、<b>日本語教育</b>、<b>中国語教育</b>。
-<br>
-<br>
-近年の研究の関心は、
-<ul>
-<li>キー・コンピテンシー特に態度の育成</li>
-<li>メタ認知と学習効果の関係</li>
-<li>学習者の実際の言語運用能力の育成</li>
-<li>学習者の自律的な学習の促進</li>
-<li>外国語学習を効率的に行うためのアプリ開発</li>
-</ul>
-近著
-<br>
-<a href="http://bit.ly/3FR2ADb" target="_blank">
-<!--img src="/assets/images/book_1.png" alt="" style="width: 200px;"-->
-<img src="{{site.baseurl | prepend: site.url}}assets/images/book_1.png" alt="Untitled" style="width: 200px;" />
-</a>
-
-<div id="paper"></div>
-<br>
-<br>
-<br>
+    </div>
+    </div>
 
 
-<h4 class="font-weight-bold">論文（査読あり）</h4>
-<br>
-<div class="table-responsive">
-<table class="table table-bordered table-striped">
-<tbody>
-{% for paper in site.data.papers %}
-<tr>
-<td class="text-nowrap">{{ paper.name }}</td>
-<td class="text-nowrap">{{ paper.date }}</td>
-<td>{{ paper.content }}</td>
-</tr>
-{% endfor %}
-</tbody>
-</table>
-</div>
+    <div class="row">
 
-<div id="award"></div>
-<br>
-<br>
-<br>
+      <div class="d-none d-sm-none d-md-none d-lg-block col-12 col-md-3 col-lg-3 bg-dark">
 
-<h4 class="font-weight-bold">論文賞等</h4>
-<br>
-<div class="table-responsive">
-<table class="table table-bordered table-striped">
-<tbody>
-{% for award in site.data.awards %}
-<tr>
-<td class="text-nowrap">{{ award.name }}</td>
-<td class="text-nowrap">{{ award.date }}</td>
-<td>{{ award.content }}</td>
-</tr>
-{% endfor %}
-</tbody>
-</table>
-</div>
+        <nav class="navbar navbar-dark bg-dark d-block position-fixed" style="padding-top: 56px; height: 100%;">
+          <a class="navbar-brand" href="#">陳姿菁</a>
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#"><i class="fa fa-angle-right"></i> 自己紹介</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#paper"><i class="fa fa-angle-right"></i> 論文（査読あり）</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#award"><i class="fa fa-angle-right"></i> 論文賞等</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#book"><i class="fa fa-angle-right"></i> 著書等</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#presentation"><i class="fa fa-angle-right"></i> 学会、研究発表会</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#lecture"><i class="fa fa-angle-right"></i> 招待講演</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#workshop"><i class="fa fa-angle-right"></i> ワークショップ</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#chair"><i class="fa fa-angle-right"></i> 座長・司会者・コメンテーター等</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#textbook"><i class="fa fa-angle-right"></i> 教科書</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#report"><i class="fa fa-angle-right"></i> 報告書</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#inner-project"><i class="fa fa-angle-right"></i> 学内研究費</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#outer-project"><i class="fa fa-angle-right"></i> 学外研究費</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#international-project"><i class="fa fa-angle-right"></i> 国際会議参加経費</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#gov-work"><i class="fa fa-angle-right"></i> 政府機関等</a>
+            </li>
+          </ul>
+        </nav>
 
-<div id="book"></div>
-<br>
-<br>
-<br>
+      </div>
 
-<h4 class="font-weight-bold">著書等</h4>
-<br>
-<div class="table-responsive">
-<table class="table table-bordered table-striped">
-<tbody>
-{% for book in site.data.books %}
-<tr>
-<td class="text-nowrap">{{ book.name }}</td>
-<td class="text-nowrap">{{ book.date }}</td>
-<td>{{ book.content }}</td>
-</tr>
-{% endfor %}
-</tbody>
-</table>
-</div>
+      <div class="col-md-12 col-lg-9">
 
-<div id="presentation"></div>
-<br>
-<br>
-<br>
+        <div class="px-4" style="padding-top: 56px; max-width: 640px; margin-right: auto; margin-left: auto;">
 
-<h4 class="font-weight-bold">学会、研究会発表</h4>
-<br>
-<div class="table-responsive">
-<table class="table table-bordered table-striped">
-<tbody>
-{% for presentation in site.data.presentations %}
-<tr>
-<td class="text-nowrap">{{ presentation.name }}</td>
-<td class="text-nowrap">{{ presentation.date }}</td>
-<td>{{ presentation.content }}</td>
-</tr>
-{% endfor %}
-</tbody>
-</table>
-</div>
+          <div id="top"></div>
+          <br class="d-lg-none">
+          <br class="d-lg-none">
+          <br class="d-lg-none">
+          <h4 class="font-weight-bold">自己紹介</h4>
+          <br>
+          日本国立お茶の水女子大学人文科学博士
+          <br>
+          <br>
+          開南大学応用日本語学科・応用中国語学科副教授
+          <br>
+          <br>
+          米国外国語教育委員会（American Council on the Teaching of Foreign Languages、ACTFL）の<b>日本語OPIテスター</b>
+          <br>
+          <br>
+          <b>「12年間国民基本教育学習指導要領-第2外国語」委員</b>
+          <br>
+          <br>
+          「108年度高等学校インターンシップカリキュラム技能評価」（外国語群）の問題開発研究委員
+          <br>
+          <br>
 
-<div id="lecture"></div>
-<br>
-<br>
-<br>
+          <b>台湾政府認定の中国語教師資格</b>を保持。
+          <br>
+          <br>
+          専門分野は<b>談話分析</b>、<b>日本語教育</b>、<b>中国語教育</b>。
+          <br>
+          <br>
+          近年の研究の関心は、
+          <ul>
+            <li>キー・コンピテンシー特に態度の育成</li>
+            <li>メタ認知と学習効果の関係</li>
+            <li>学習者の実際の言語運用能力の育成</li>
+            <li>学習者の自律的な学習の促進</li>
+            <li>外国語学習を効率的に行うためのアプリ開発</li>
+          </ul>
+          近著
+          <br>
+          <a href="http://bit.ly/3FR2ADb" target="_blank">
+            <!--img src="/assets/images/book_1.png" alt="" style="width: 200px;"-->
+            <img src="{{site.baseurl | prepend: site.url}}assets/images/book_1.png" alt="Untitled"
+              style="width: 200px;" />
+          </a>
 
-<h4 class="font-weight-bold">招待講演</h4>
-<br>
-<div class="table-responsive">
-<table class="table table-bordered table-striped">
-<tbody>
-{% for lecture in site.data.lectures %}
-<tr>
-<td class="text-nowrap">{{ lecture.name }}</td>
-<td class="text-nowrap">{{ lecture.date }}</td>
-<td>{{ lecture.content }}</td>
-</tr>
-{% endfor %}
-</tbody>
-</table>
-</div>
+          <div id="paper"></div>
+          <br>
+          <br>
+          <br>
 
-<div id="workshop"></div>
-<br>
-<br>
-<br>
+          <h4 class="font-weight-bold">論文（査読あり）</h4>
+          <br>
+          <div class="table-responsive">
+            <table class="table table-bordered table-striped">
+              <tbody>
+                {% for paper in site.data.papers %}
+                <tr>
+                  <td class="text-nowrap">{{ paper.name }}</td>
+                  <td class="text-nowrap">{{ paper.date }}</td>
+                  <td>{{ paper.content }}</td>
+                </tr>
+                {% endfor %}
+              </tbody>
+            </table>
+          </div>
 
-<h4 class="font-weight-bold">ワークショップ</h4>
-<br>
-<div class="table-responsive">
-<table class="table table-bordered table-striped">
-<tbody>
-{% for workshop in site.data.workshops %}
-<tr>
-<td class="text-nowrap">{{ workshop.name }}</td>
-<td class="text-nowrap">{{ workshop.date }}</td>
-<td>{{ workshop.content }}</td>
-</tr>
-{% endfor %}
-</tbody>
-</table>
-</div>
+          <div id="award"></div>
+          <br>
+          <br>
+          <br>
 
-<div id="chair"></div>
-<br>
-<br>
-<br>
+          <h4 class="font-weight-bold">論文賞等</h4>
+          <br>
+          <div class="table-responsive">
+            <table class="table table-bordered table-striped">
+              <tbody>
+                {% for award in site.data.awards %}
+                <tr>
+                  <td class="text-nowrap">{{ award.name }}</td>
+                  <td class="text-nowrap">{{ award.date }}</td>
+                  <td>{{ award.content }}</td>
+                </tr>
+                {% endfor %}
+              </tbody>
+            </table>
+          </div>
 
-<h4 class="font-weight-bold">座長・司会者・コメンテーター等</h4>
-<br>
-<div class="table-responsive">
-<table class="table table-bordered table-striped">
-<tbody>
-{% for chair in site.data.chairs %}
-<tr>
-<!--td class="text-nowrap">{{ chair.name }}</td-->
-<td class="text-nowrap">{{ chair.date }}</td>
-<td>{{ chair.content }}</td>
-</tr>
-{% endfor %}
-</tbody>
-</table>
-</div>
+          <div id="book"></div>
+          <br>
+          <br>
+          <br>
 
-<div id="textbook"></div>
-<br>
-<br>
-<br>
+          <h4 class="font-weight-bold">著書等</h4>
+          <br>
+          <div class="table-responsive">
+            <table class="table table-bordered table-striped">
+              <tbody>
+                {% for book in site.data.books %}
+                <tr>
+                  <td class="text-nowrap">{{ book.name }}</td>
+                  <td class="text-nowrap">{{ book.date }}</td>
+                  <td>{{ book.content }}</td>
+                </tr>
+                {% endfor %}
+              </tbody>
+            </table>
+          </div>
 
-<h4 class="font-weight-bold">教科書</h4>
-<br>
-<div class="table-responsive">
-<table class="table table-bordered table-striped">
-<tbody>
-{% for textbook in site.data.textbooks %}
-<tr>
-<td class="text-nowrap">{{ textbook.name }}</td>
-<td class="text-nowrap">{{ textbook.date }}</td>
-<td>{{ textbook.content }}</td>
-</tr>
-{% endfor %}
-</tbody>
-</table>
-</div>
+          <div id="presentation"></div>
+          <br>
+          <br>
+          <br>
 
-<div id="report"></div>
-<br>
-<br>
-<br>
+          <h4 class="font-weight-bold">学会、研究会発表</h4>
+          <br>
+          <div class="table-responsive">
+            <table class="table table-bordered table-striped">
+              <tbody>
+                {% for presentation in site.data.presentations %}
+                <tr>
+                  <td class="text-nowrap">{{ presentation.name }}</td>
+                  <td class="text-nowrap">{{ presentation.date }}</td>
+                  <td>{{ presentation.content }}</td>
+                </tr>
+                {% endfor %}
+              </tbody>
+            </table>
+          </div>
 
-<h4 class="font-weight-bold">報告書</h4>
-<br>
-<div class="table-responsive">
-<table class="table table-bordered table-striped">
-<tbody>
-{% for report in site.data.reports %}
-<tr>
-<td class="text-nowrap">{{ report.date }}</td>
-<td>{{ report.content }}</td>
-</tr>
-{% endfor %}
-</tbody>
-</table>
-</div>
+          <div id="lecture"></div>
+          <br>
+          <br>
+          <br>
 
-<div id="inner-project"></div>
-<br>
-<br>
-<br>
+          <h4 class="font-weight-bold">招待講演</h4>
+          <br>
+          <div class="table-responsive">
+            <table class="table table-bordered table-striped">
+              <tbody>
+                {% for lecture in site.data.lectures %}
+                <tr>
+                  <td class="text-nowrap">{{ lecture.name }}</td>
+                  <td class="text-nowrap">{{ lecture.date }}</td>
+                  <td>{{ lecture.content }}</td>
+                </tr>
+                {% endfor %}
+              </tbody>
+            </table>
+          </div>
 
-<h4 class="font-weight-bold">学内研究費</h4>
-<br>
-<div class="table-responsive">
-<table class="table table-bordered table-striped">
-<tbody>
-{% for inner-project in site.data.inner-projects %}
-<tr>
-<td class="text-nowrap">{{ inner-project.date }}</td>
-<td>{{ inner-project.content }}</td>
-</tr>
-{% endfor %}
-</tbody>
-</table>
-</div>
+          <div id="workshop"></div>
+          <br>
+          <br>
+          <br>
 
-<div id="outer-project"></div>
-<br>
-<br>
-<br>
+          <h4 class="font-weight-bold">ワークショップ</h4>
+          <br>
+          <div class="table-responsive">
+            <table class="table table-bordered table-striped">
+              <tbody>
+                {% for workshop in site.data.workshops %}
+                <tr>
+                  <td class="text-nowrap">{{ workshop.name }}</td>
+                  <td class="text-nowrap">{{ workshop.date }}</td>
+                  <td>{{ workshop.content }}</td>
+                </tr>
+                {% endfor %}
+              </tbody>
+            </table>
+          </div>
 
-<h4 class="font-weight-bold">学外研究費</h4>
-<br>
-<div class="table-responsive">
-<table class="table table-bordered table-striped">
-<tbody>
-{% for outer-project in site.data.outer-projects %}
-<tr>
-<td class="text-nowrap">{{ outer-project.date }}</td>
-<td>{{ outer-project.content }}</td>
-</tr>
-{% endfor %}
-</tbody>
-</table>
-</div>
+          <div id="chair"></div>
+          <br>
+          <br>
+          <br>
 
-<div id="international-project"></div>
-<br>
-<br>
-<br>
+          <h4 class="font-weight-bold">座長・司会者・コメンテーター等</h4>
+          <br>
+          <div class="table-responsive">
+            <table class="table table-bordered table-striped">
+              <tbody>
+                {% for chair in site.data.chairs %}
+                <tr>
+                  <!--td class="text-nowrap">{{ chair.name }}</td-->
+                  <td class="text-nowrap">{{ chair.date }}</td>
+                  <td>{{ chair.content }}</td>
+                </tr>
+                {% endfor %}
+              </tbody>
+            </table>
+          </div>
 
-<h4 class="font-weight-bold">国際会議参加経費</h4>
-<br>
-<div class="table-responsive">
-<table class="table table-bordered table-striped">
-<tbody>
-{% for international-project in site.data.international-projects %}
-<tr>
-<td class="text-nowrap">{{ international-project.date }}</td>
-<td>{{ international-project.content }}</td>
-</tr>
-{% endfor %}
-</tbody>
-</table>
-</div>
+          <div id="textbook"></div>
+          <br>
+          <br>
+          <br>
 
-<div id="gov-work"></div>
-<br>
-<br>
-<br>
+          <h4 class="font-weight-bold">教科書</h4>
+          <br>
+          <div class="table-responsive">
+            <table class="table table-bordered table-striped">
+              <tbody>
+                {% for textbook in site.data.textbooks %}
+                <tr>
+                  <td class="text-nowrap">{{ textbook.name }}</td>
+                  <td class="text-nowrap">{{ textbook.date }}</td>
+                  <td>{{ textbook.content }}</td>
+                </tr>
+                {% endfor %}
+              </tbody>
+            </table>
+          </div>
 
-<h4 class="font-weight-bold">政府機関等</h4>
-<br>
-<div class="table-responsive">
-<table class="table table-bordered table-striped">
-<tbody>
-{% for gov-work in site.data.gov-works %}
-<tr>
-<td class="text-nowrap">{{ gov-work.date }}</td>
-<td>{{ gov-work.content }}</td>
-</tr>
-{% endfor %}
-</tbody>
-</table>
-</div>
+          <div id="report"></div>
+          <br>
+          <br>
+          <br>
 
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
+          <h4 class="font-weight-bold">報告書</h4>
+          <br>
+          <div class="table-responsive">
+            <table class="table table-bordered table-striped">
+              <tbody>
+                {% for report in site.data.reports %}
+                <tr>
+                  <td class="text-nowrap">{{ report.date }}</td>
+                  <td>{{ report.content }}</td>
+                </tr>
+                {% endfor %}
+              </tbody>
+            </table>
+          </div>
 
-</div>
-</div>
+          <div id="inner-project"></div>
+          <br>
+          <br>
+          <br>
 
-<a class="pagetop mr-4 mb-4" href="#"><div class="pagetop_arrow"><!--i class="fa fa-angle-up"--><!--/i--></div></a>
+          <h4 class="font-weight-bold">学内研究費</h4>
+          <br>
+          <div class="table-responsive">
+            <table class="table table-bordered table-striped">
+              <tbody>
+                {% for inner-project in site.data.inner-projects %}
+                <tr>
+                  <td class="text-nowrap">{{ inner-project.date }}</td>
+                  <td>{{ inner-project.content }}</td>
+                </tr>
+                {% endfor %}
+              </tbody>
+            </table>
+          </div>
+
+          <div id="outer-project"></div>
+          <br>
+          <br>
+          <br>
+
+          <h4 class="font-weight-bold">学外研究費</h4>
+          <br>
+          <div class="table-responsive">
+            <table class="table table-bordered table-striped">
+              <tbody>
+                {% for outer-project in site.data.outer-projects %}
+                <tr>
+                  <td class="text-nowrap">{{ outer-project.date }}</td>
+                  <td>{{ outer-project.content }}</td>
+                </tr>
+                {% endfor %}
+              </tbody>
+            </table>
+          </div>
+
+          <div id="international-project"></div>
+          <br>
+          <br>
+          <br>
+
+          <h4 class="font-weight-bold">国際会議参加経費</h4>
+          <br>
+          <div class="table-responsive">
+            <table class="table table-bordered table-striped">
+              <tbody>
+                {% for international-project in site.data.international-projects %}
+                <tr>
+                  <td class="text-nowrap">{{ international-project.date }}</td>
+                  <td>{{ international-project.content }}</td>
+                </tr>
+                {% endfor %}
+              </tbody>
+            </table>
+          </div>
+
+          <div id="gov-work"></div>
+          <br>
+          <br>
+          <br>
+
+          <h4 class="font-weight-bold">政府機関等</h4>
+          <br>
+          <div class="table-responsive">
+            <table class="table table-bordered table-striped">
+              <tbody>
+                {% for gov-work in site.data.gov-works %}
+                <tr>
+                  <td class="text-nowrap">{{ gov-work.date }}</td>
+                  <td>{{ gov-work.content }}</td>
+                </tr>
+                {% endfor %}
+              </tbody>
+            </table>
+          </div>
+
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+
+        </div>
+
+      </div>
+
+    </div>
+  </div>
 
 
-<!--script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script-->
-<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha384-tsQFqpEReu7ZLhBV2VZlAu7zcOV+rXbYlF2cqB8txI/8aZajjp4Bqd+V6D5IgvKT" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-<script>
-  $('.navbar-nav>li>a , .dropdown-menu>a').on('click', function(){
-    if(this.id != 'navbarDropdown'){
-      $('.navbar-collapse').collapse('hide');
-    }
-  });
-  $(document).ready(function() {
-    $('.pagetop').fadeOut(0);
-  });
-  //jQuery(function($){
-    $(window).on('scroll', function(){
+  </div>
+
+  <a class="pagetop mr-4 mb-4" href="#">
+    <div class="pagetop_arrow"><!--i class="fa fa-angle-up"--><!--/i--></div>
+  </a>
+
+
+  <!--script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script-->
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha384-tsQFqpEReu7ZLhBV2VZlAu7zcOV+rXbYlF2cqB8txI/8aZajjp4Bqd+V6D5IgvKT"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+  <script>
+    $('.navbar-nav>li>a , .dropdown-menu>a').on('click', function () {
+      if (this.id != 'navbarDropdown') {
+        $('.navbar-collapse').collapse('hide');
+      }
+    });
+    $(document).ready(function () {
+      $('.pagetop').fadeOut(0);
+    });
+    //jQuery(function($){
+    $(window).on('scroll', function () {
       if ($(window).scrollTop() > 300) {
         $('.pagetop').fadeIn(400);
       } else {
@@ -469,6 +551,7 @@ h4 {
       }
     });
   //});
-</script>
+  </script>
 </body>
+
 </html>
